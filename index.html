@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fatokunbo Isaac | Frontend Developer</title>
+  <meta name="description" content="Fatokunbo Isaac is a Frontend Developer passionate about clean UI, accessibility, and future AI integration." />
+  <meta name="keywords" content="Frontend Developer, JavaScript, Tailwind CSS, Portfolio, ZICO, Fatokunbo Isaac" />
+  <meta name="author" content="Fatokunbo Isaac" />
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      transition: background-color 0.4s ease, color 0.4s ease;
+    }
+    .motion-card {
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+    .motion-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-100">
+  <!-- Toggle, Hero, Skills, Projects, About, Contact Sections -->
+
+  <!-- Theme Toggle -->
+  <nav class="fixed top-0 left-0 w-full p-4 flex justify-end z-50">
+    <label class="relative inline-flex items-center cursor-pointer">
+      <input type="checkbox" id="theme-toggle" class="sr-only">
+      <div class="w-14 h-8 bg-gray-300 dark:bg-gray-700 rounded-full">
+        <div id="toggle-thumb" class="absolute top-1 left-1 w-6 h-6 bg-white rounded-full shadow-md flex items-center justify-center transition-all">
+          <span id="toggle-icon" class="text-xs">🌞</span>
+        </div>
+      </div>
+    </label>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="min-h-screen flex flex-col justify-center items-center text-center px-4 pt-20">
+    <img src="path/to/your-avatar.jpg" alt="Fatokunbo Isaac" class="w-32 h-32 rounded-full mb-6 shadow-lg" />
+    <h1 class="text-4xl sm:text-5xl font-bold mb-4">Hi, I'm Fatokunbo Isaac</h1>
+    <h2 class="text-xl sm:text-2xl text-indigo-600 dark:text-indigo-400 mb-6">
+      <span>I'm a </span><span id="typed"></span>
+    </h2>
+    <p class="max-w-xl mb-6">
+      I build clean, accessible web interfaces with modern tools and best practices.
+    </p>
+    <div class="flex space-x-4">
+      <a href="#projects" class="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700">View Projects</a>
+      <a href="#" class="px-4 py-2 border border-indigo-600 text-indigo-600 rounded hover:bg-indigo-100 dark:hover:bg-indigo-700 dark:hover:text-white">Download CV</a>
+    </div>
+    <div class="flex mt-6 space-x-4">
+      <a href="https://github.com/yourusername" class="hover:text-indigo-600 dark:hover:text-indigo-400">GitHub</a>
+      <a href="https://linkedin.com/in/yourusername" class="hover:text-indigo-600 dark:hover:text-indigo-400">LinkedIn</a>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 text-center">
+    <h2 class="text-3xl font-bold mb-8">Skills</h2>
+    <div class="flex flex-wrap justify-center gap-4">
+      <span class="px-4 py-2 bg-indigo-100 dark:bg-indigo-700 rounded">HTML</span>
+      <span class="px-4 py-2 bg-indigo-100 dark:bg-indigo-700 rounded">CSS</span>
+      <span class="px-4 py-2 bg-indigo-100 dark:bg-indigo-700 rounded">Tailwind CSS</span>
+      <span class="px-4 py-2 bg-indigo-100 dark:bg-indigo-700 rounded">JavaScript</span>
+      <span class="px-4 py-2 bg-indigo-100 dark:bg-indigo-700 rounded">Git</span>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 bg-gray-100 dark:bg-gray-800 text-center">
+    <h2 class="text-3xl font-bold mb-12">Projects</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
+      <div class="motion-card bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg">
+        <h3 class="text-lg font-semibold mb-2">Project 1</h3>
+        <p class="text-sm mb-4">A minimal, clean UI project built with Tailwind CSS.</p>
+        <a href="#" class="text-indigo-600 hover:underline">Live Demo</a>
+      </div>
+      <div class="motion-card bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg">
+        <h3 class="text-lg font-semibold mb-2">Project 2</h3>
+        <p class="text-sm mb-4">A chat interface for AI assistants like ZICO.</p>
+        <a href="#" class="text-indigo-600 hover:underline">Live Demo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 text-center">
+    <h2 class="text-3xl font-bold mb-8">About Me</h2>
+    <p class="max-w-2xl mx-auto">
+      Young dev from NG 🇳🇬 — I’m focused on frontend now (JS + Tailwind) and plan to move into AI/ML later. Big vision with a clean dev style.
+    </p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-gray-100 dark:bg-gray-800 text-center">
+    <h2 class="text-3xl font-bold mb-8">Let's Connect</h2>
+    <form class="max-w-lg mx-auto space-y-4">
+      <input type="text" placeholder="Name" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-indigo-400" />
+      <input type="email" placeholder="Email" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-indigo-400" />
+      <textarea placeholder="Message" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-indigo-400"></textarea>
+      <button type="submit" class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700">Send</button>
+    </form>
+  </section>
+
+  <!-- Scripts -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      new Typed('#typed', {
+        strings: ['Frontend Developer.', 'JavaScript Enthusiast.', 'UI/UX Creator.', 'Tailwind Lover.'],
+        typeSpeed: 50,
+        backSpeed: 30,
+        backDelay: 2000,
+        loop: true
+      });
+
+      const toggle = document.getElementById('theme-toggle');
+      const thumb = document.getElementById('toggle-thumb');
+      const icon = document.getElementById('toggle-icon');
+
+      const updateTheme = (isDark) => {
+        if (isDark) {
+          document.documentElement.classList.add('dark');
+          localStorage.setItem('theme', 'dark');
+          icon.textContent = '🌙';
+          thumb.style.transform = 'translateX(28px)';
+        } else {
+          document.documentElement.classList.remove('dark');
+          localStorage.setItem('theme', 'light');
+          icon.textContent = '🌞';
+          thumb.style.transform = 'translateX(0px)';
+        }
+      };
+
+      toggle.addEventListener('change', () => {
+        updateTheme(toggle.checked);
+      });
+
+      const currentTheme = localStorage.getItem('theme');
+      toggle.checked = currentTheme === 'dark';
+      updateTheme(toggle.checked);
+    });
+  </script>
+</body>
+  </html>
+        
